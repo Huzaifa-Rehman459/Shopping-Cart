@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>E-commerce Cart</title>
+  </head>
+  <body>
+    <!-- Login Form -->
+    <form id="login-form" class="hide">
+      <div class="login-container">
+        <h1>Login Page</h1>
+        <div class="input-boxes">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter your email" />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your passowrd"
+          />
+          <a href="#" id="passRemove">Forgot password?</a>
+        </div>
+        <small id="errorText"></small>
+        <button id="loginBtn">Log in</button>
+        <div class="or-separator">
+          <span>OR</span>
+        </div>
+        <div class="social-links">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-apple"></i>
+        </div>
+        <div class="sign-box">
+          Don't have an account?<button id="signBtn">Sign up</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Sign up form -->
+    <form id="signup-form" class="hide">
+      <div class="signup-container">
+        <div class="left-side">
+          <img src="main.avif" />
+        </div>
+        <div class="right-side">
+          <h1>Create Account</h1>
+          <div class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-apple"></i>
+          </div>
+          <p>Or use your email for registration.</p>
+          <div class="input-box">
+            <label for="username">Usernmae:</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+            />
+            <label for="email">Email:</label>
+            <input type="email" id="email1" placeholder="Enter your email" />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password1"
+              placeholder="Enter your passowrd"
+            />
+          </div>
+          <button id="signUpBtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+    <!-- Cart Display -->
+    <div class="food-section" id="foodSection">
+      <div class="cart-nav">
+        <h3 id="menuHeading">Food Menu</h3>
+        <i class="fa-solid fa-cart-shopping" id="shoppingCart"
+          ><span class="cartCount">0</span></i
+        >
+      </div>
+      <div id="cards"></div>
+    </div>
+    <!-- Add to Cart -->
+    <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="cartList"></div>
+      <h3>Total: $<span id="totalAmount">0</span></h3>
+      <div class="btns">
+        <button id="closeBtn">Close</button>
+        <button id="checkOutBtn">Check Out</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
